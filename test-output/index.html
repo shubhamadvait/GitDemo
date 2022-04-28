@@ -2,10 +2,12 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -22,8 +24,9 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\ACER\eclipse-workspace\E2EProject\testng.xml</span>
+                    <span>C:\Users\ACER\eclipse-workspace\Maven_test\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.E2EProject.validateTitle" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,22 +104,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.E2EProject.validateTitle" hash-for-method="baseHeader">baseHeader</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qaclickacademy.SeleniumTest" hash-for-method="alert">alert</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.E2EProject.HomePage" hash-for-method="basePageNavigation(restricteduser@qw.com, 556884, Restricted User)">basePageNavigation(restricteduser@qw.com, 556884, Restricted User)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qaclickacademy.AppiumTest" hash-for-method="botton">botton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.E2EProject.HomePage" hash-for-method="basePageNavigation(nonrestricteduser@qw.com, 123456, Non Restricted User)">basePageNavigation(nonrestricteduser@qw.com, 123456, Non Restricted User)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qaclickacademy.SeleniumTest" hash-for-method="calender">calender</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.E2EProject.validateNavigationBar" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qaclickacademy.RESTAPITest" hash-for-method="deleteTwitter">deleteTwitter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qaclickacademy.AppiumTest" hash-for-method="mobilework">mobilework</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="qaclickacademy.RESTAPITest" hash-for-method="postJira">postJira</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -145,67 +144,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Academy.E2EProject.validateTitle</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [FEATURED 11COURSES] but found [FEATURED COURSES]
-	at Academy.E2EProject.validateTitle.basePageNavigation(validateTitle.java:28)
-... Removed 29 stack frames<br/> java.lang.AssertionError: expected [FEATURED 11COURSES] but found [FEATURED COURSES]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at Academy.E2EProject.validateTitle.basePageNavigation(validateTitle.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>Academy.E2EProject.validateTitle.basePageNavigation(validateTitle.java:28)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.E2EProject.validateTitle</span>
+              <span class="class-name">qaclickacademy.AppiumTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="baseHeader">
-                  </a> <!-- baseHeader -->
-                  <span class="method-name">baseHeader</span>
+                  <a name="botton">
+                  </a> <!-- botton -->
+                  <span class="method-name">botton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mobilework">
+                  </a> <!-- mobilework -->
+                  <span class="method-name">mobilework</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,14 +169,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.E2EProject.validateNavigationBar</span>
+              <span class="class-name">qaclickacademy.RESTAPITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="deleteTwitter">
+                  </a> <!-- deleteTwitter -->
+                  <span class="method-name">deleteTwitter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postJira">
+                  </a> <!-- postJira -->
+                  <span class="method-name">postJira</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,23 +191,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.E2EProject.HomePage</span>
+              <span class="class-name">qaclickacademy.SeleniumTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(restricteduser@qw.com, 556884, Restricted User)">
-                  </a> <!-- basePageNavigation(restricteduser@qw.com, 556884, Restricted User) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(restricteduser@qw.com, 556884, Restricted User)</span>
+                  <a name="alert">
+                  </a> <!-- alert -->
+                  <span class="method-name">alert</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(nonrestricteduser@qw.com, 123456, Non Restricted User)">
-                  </a> <!-- basePageNavigation(nonrestricteduser@qw.com, 123456, Non Restricted User) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(nonrestricteduser@qw.com, 123456, Non Restricted User)</span>
+                  <a name="calender">
+                  </a> <!-- calender -->
+                  <span class="method-name">calender</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,36 +213,21 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ACER\eclipse-workspace\E2EProject\testng.xml</span>
+            <span class="header-content">C:\Users\ACER\eclipse-workspace\Maven_test\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;Academy.E2EProject.Listeners&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test name=&quot;Validating User Login&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Academy.E2EProject.HomePage&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating User Login --&gt;
-  &lt;test name=&quot;Validating navigation bar&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Academy.E2EProject.validateNavigationBar&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating navigation bar --&gt;
-  &lt;test name=&quot;Test&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Academy.E2EProject.AppTest&quot;/&gt;
+      &lt;class name=&quot;qaclickacademy.AppiumTest&quot;/&gt;
+      &lt;class name=&quot;qaclickacademy.SeleniumTest&quot;/&gt;
+      &lt;class name=&quot;qaclickacademy.RESTAPITest&quot;/&gt;
+      &lt;class name=&quot;Maven_test.Maven_test.AppTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test name=&quot;Validating title name&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Academy.E2EProject.validateTitle&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating title name --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -293,16 +239,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Validating User Login (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validating navigation bar (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validating title name (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,32 +265,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'basePageNavigation')
-data.setCell(0, 2, 'Academy.E2EProject.HomePage')
-data.setCell(0, 3, 13479);
+data.setCell(0, 1, 'botton')
+data.setCell(0, 2, 'qaclickacademy.AppiumTest')
+data.setCell(0, 3, 15);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'basePageNavigation')
-data.setCell(1, 2, 'Academy.E2EProject.HomePage')
-data.setCell(1, 3, 3096);
+data.setCell(1, 1, 'mobilework')
+data.setCell(1, 2, 'qaclickacademy.AppiumTest')
+data.setCell(1, 3, 4);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'basePageNavigation')
-data.setCell(2, 2, 'Academy.E2EProject.validateNavigationBar')
-data.setCell(2, 3, 1101);
+data.setCell(2, 1, 'deleteTwitter')
+data.setCell(2, 2, 'qaclickacademy.RESTAPITest')
+data.setCell(2, 3, 4);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'basePageNavigation')
-data.setCell(3, 2, 'Academy.E2EProject.validateTitle')
-data.setCell(3, 3, 143);
+data.setCell(3, 1, 'calender')
+data.setCell(3, 2, 'qaclickacademy.SeleniumTest')
+data.setCell(3, 3, 2);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'baseHeader')
-data.setCell(4, 2, 'Academy.E2EProject.validateTitle')
-data.setCell(4, 3, 99);
+data.setCell(4, 1, 'alert')
+data.setCell(4, 2, 'qaclickacademy.SeleniumTest')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'postJira')
+data.setCell(5, 2, 'qaclickacademy.RESTAPITest')
+data.setCell(5, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 29 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -379,62 +320,41 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.E2EProject.HomePage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">intializer</span>
+              <div class="chronological-class-name">qaclickacademy.AppiumTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">botton</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation(nonrestricteduser@qw.com, 123456, Non Restricted User)</span>
-                <span class="method-start">6749 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation(restricteduser@qw.com, 556884, Restricted User)</span>
-                <span class="method-start">20241 ms</span>
+                <span class="method-name">mobilework</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tear</span>
-                <span class="method-start">23346 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.E2EProject.validateNavigationBar</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">intializer</span>
-                <span class="method-start">26975 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">qaclickacademy.SeleniumTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">65276 ms</span>
+                <span class="method-name">alert</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tear</span>
-                <span class="method-start">66379 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">calender</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.E2EProject.validateTitle</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">intializer</span>
-                <span class="method-start">70264 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">qaclickacademy.RESTAPITest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">baseHeader</span>
-                <span class="method-start">107501 ms</span>
+                <span class="method-name">deleteTwitter</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">107603 ms</span>
+                <span class="method-name">postJira</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tear</span>
-                <span class="method-start">108463 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
